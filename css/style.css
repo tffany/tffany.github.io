@@ -10,12 +10,13 @@ File Description:Main CSS file of the template */
 ----------------------------------------------------------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Alegreya:400,400italic,700italic,700,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 body {
 	font-family: 'Alegreya', serif;
 }
 .site-name {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 html,
 body {
@@ -25,7 +26,7 @@ body {
 	font-size: 15px;
 	line-height: 1.50;
 	color: #ccc;
-	background-color: #333;	
+	background-color: #222;	
 	position: relative;
 }
 h1,
@@ -35,7 +36,7 @@ h4,
 h5,
 h6 {
 	color: #ccc;
-	font-family:'Raleway';
+	font-family:'Montserrat';
 }
 h1 {
 	font-size: 38px;
@@ -65,20 +66,30 @@ h1 span,
 h2 span,
 h3 span,
 h4 span {
-	color: #C00000;
+	color: #C00020;
 }
 .text-colored {
 	color: #C00020;
 }
+
+p span{
+	color: #FFC400;
+}
+
 a {
 	color: #C00020;
+	font-weight: 500;
+	text-decoration:none;
 }
 a:hover {
-	color: #C00000;
+	color: #FFC400;
+	text-decoration:none;
+	
 }
 a:focus,
 a:active {
 	outline: none;
+	text-decoration:none;
 }
 .large {
 	font-size: 18px;
@@ -121,6 +132,7 @@ blockquote {
 .header {
 	color: #ffffff;
 	padding: 7px 0;
+	background-color: rgba(80, 158, 174, 0.5);
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
@@ -132,13 +144,15 @@ blockquote {
 	height: 60%;
 	position: relative;
 	color: #fff;
+	background-color:#7ED8E1;
 }
+
 .banner-image {
 	vertical-align: middle;
 	min-height: 100%;
 	width: 100%;
 }
-.banner:after {
+/*.banner:after {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -146,7 +160,7 @@ blockquote {
 	bottom: 0;
 	background-color: rgba(0, 0, 0, 0.55);
 	content: "";
-}
+}*/
 .banner-caption {
 	position: absolute;
 	top: 40%;
@@ -154,10 +168,9 @@ blockquote {
 	z-index: 2;
 }
 .subfooter {
-	background-color: #fafafa;
-	border-top: 1px solid #f3f3f3;
-	border-bottom: 1px solid #f3f3f3;
-	padding: 10px 0;
+	background-color: #222;
+	font-size: 10px;
+	color: #ccc;
 }
 .section {
 	background-color: #222;
@@ -170,7 +183,7 @@ blockquote {
 	background-color: #222222;
 	color: #ffffff;
 }
-.default-bg.blue {
+.default-bg.color1 {
 	background-color: #C00020;
 }
 .translucent-bg {
@@ -227,15 +240,15 @@ blockquote {
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.7);
 }
-.translucent-bg.blue:after {
-	background-color: rgba(130, 0, 70,.7);
+.translucent-bg.color1:after {
+	background-color: rgba(80, 158, 174, 0.7);
 }
 .translucent-bg .container {
 	z-index: 3;
 	position: relative;
 }
 .bg-image-1 {
-	background: url("../images/bg-image-1.jpg") 50% 0px no-repeat;
+	background: url("../images/bg1.png") 50% 0px no-repeat;
 }
 .bg-image-2 {
 	background: url("../images/bg-image-2.jpg") 50% 0px no-repeat;
@@ -277,15 +290,9 @@ blockquote {
 	padding-bottom: 3%;
 }
 
-.navbar-nav {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 800;
-
-}
-
 .barbar{
 	content: " "; 
-	border: solid 1px #C00000; 
+	border: solid 1px #FFC400; 
 	display: block; 	
 	width: 65px; 
 	margin: 7px 0 15px 0; 
@@ -314,12 +321,12 @@ blockquote {
 /* Buttons
 ---------------------------------- */
 .btn {
-	padding: 8px 15px;
+	/*padding: 8px 15px;*/
 	font-size: 14px;
 	line-height: 1.42857143;
 	min-width: 160px;
 	text-align: center;
-	border-radius: 0;
+	/*border-radius: 0;*/
 	text-transform: uppercase;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
@@ -329,12 +336,13 @@ blockquote {
 }
 .btn-default {
 	color: #C00020;
+	background:transparent;
 	border: 1px solid #cccccc;
 }
 .btn-default:hover {
 	color: #ffffff;
-	background-color: #C00000;
-	border-color: #C00000;
+	background-color: #FFC400;
+	border-color: #FFC400;
 }
 
 /* Collapse
@@ -344,6 +352,8 @@ blockquote {
 	-moz-border-radius: 0px;
 	border-radius: 0px;
 	border: none;
+	color: #ccc;
+	background: transparent;
 }
 .panel-default > .panel-heading {
 	padding: 0;
@@ -356,19 +366,25 @@ blockquote {
 	width: 100%;
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
-	border: 1px solid #f0f0f0;
+	/*border: 1px solid #f0f0f0;*/
 	border-top: none;
-	background-color: #fafafa
+	background-color: transparent;	
 }
+/*.panel-default > .panel-heading{
+	background-color: transparent;
+	
+}*/
+
 .panel-heading a {
 	font-weight: 400;
 	padding: 12px 35px 12px 15px;
 	display: inline-block;
 	width: 100%;
-	background-color: #C00020;
+	background-color: #7ED8E1;
 	color: #ffffff;
 	position: relative;
 	text-decoration: none;
+	font-weight: 500;
 }
 .panel-heading a.collapsed {
 	color: #ffffff;
@@ -390,7 +406,7 @@ blockquote {
 }
 .panel-heading a:hover {
 	text-decoration: none;
-	background-color: #C00020;
+	background-color: #FFC400;
 	color: #ffffff;
 }
 .panel-title a i {
@@ -403,7 +419,7 @@ blockquote {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus{
-	background-color: #C00000;
+	background-color: #FFC400;
 	border-color: none;
 	color: #ffffff;
 }
@@ -420,6 +436,7 @@ blockquote {
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: 300;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* Forms
@@ -445,14 +462,21 @@ textarea {
 .modal-content {
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
-	border-radius: 0px;
+	border-radius: 1px;
+	color: #ccc;
+	background-color:  rgba(30, 30, 30, 1);
 }
+
+.modal-content .row{
+	margin-left: auto;
+	}
+	
 .modal-header {
-	background-color: #C00020;
-	color: #ffffff;
+	background-color: #7ED8E1;
+	color: #C00020;
 }
 .modal-header h4 {
-	color: #ffffff;
+	color: #C00020;
 }
 .modal-header .close {
 	font-weight: 300;
@@ -493,7 +517,8 @@ textarea {
 	color: #fff;
 	padding: 10px 20px;
 	font-size: 18px;
-	font-weight: 300;
+	font-weight: 500;
+	font-family: 'Montserrat', sans-serif;
 }
 .main-navigation .navbar-default .navbar-nav > li.active > a {
 	background-color: transparent;
@@ -532,7 +557,7 @@ textarea {
 /* Fixed Header
 ----------------------------------------------------------------------------- */
 .fixed-header-on .header {
-	background-color: rgba(0, 0, 0, 0.95);
+	background-color: rgba(80, 158, 174, 0.95);
 	padding: 5px 0;
 }
 .fixed-header-on .site-name {
@@ -571,12 +596,21 @@ textarea {
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
+
+@media (max-width:991px) {
+	.logo{
+		width: 15%;
+	}
+}
+
 .logo,
 .site-name-and-slogan {
 	float: left;
 }
 .site-name {
 	font-size: 36px;
+	font-weight: 500;
+	text-decoration: none !important;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -587,7 +621,7 @@ textarea {
 	color: #ffffff;
 }
 .site-name a:hover {
-	text-decoration: none;
+	text-decoration: none !important;
 }
 .site-slogan {
 	font-size: 12px;
@@ -776,9 +810,9 @@ code from http://themarklee.com/2013/10/16/simple-crossfading-slideshow-css/*/
 
 .css-slideshow figcaption{
   position: absolute;
-  top: 0;
+  bottom: 0;
   color: #fff;
-  background: rgba(0,0,0, .3);
+  background: rgba(0,0,0, .75);
   font-size: .8em;
   padding: 8px 12px;
   opacity: 0;
@@ -804,29 +838,29 @@ code from http://themarklee.com/2013/10/16/simple-crossfading-slideshow-css/*/
 
 
 figure:nth-child(1) {
-  animation: xfade 48s 24s infinite;
+  animation: xfade 35s 28s infinite;
 }
 figure:nth-child(2) {
-  animation: xfade 48s 18s infinite;
+  animation: xfade 35s 21s infinite;
 }
 figure:nth-child(3) {
-  animation: xfade 48s 12s infinite;
+  animation: xfade 35s 14s infinite;
 }
 figure:nth-child(4) {
-  animation: xfade 48s 6s infinite;
+  animation: xfade 35s 7s infinite;
 }
 figure:nth-child(5) {
-  animation: xfade 48s 0s infinite;
+  animation: xfade 35s 0s infinite;
 }
 
 @keyframes xfade{
   0%{
     opacity: 1;
   }
-  10.5% {
+  18% {
     opacity: 1;
   }
-  12.5%{
+  20%{
     opacity: 0;
   }
   98% {
