@@ -1,0 +1,322 @@
+/*!
+ * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+  @import url(http://allfont.net/css/?fonts=banco-normal);
+  @font-face {
+    font-family: 'Banco Std Bold'; /*backup*/
+    src: url('fonts/BancoStd.otf'); /*URL to font*/
+	}
+	
+	@font-face {
+    font-family: "Rockwell Bold"; /*backup*/
+    src: url('fonts/ROCKB.ttf'); /*URL to font*/
+	}
+/*type*/
+html,
+body {
+    height: 100%;
+	background-color: black;
+	font-family: "Rockwell	Bold", "Rockwell Bold", monospace ;
+}
+
+body {
+    padding-top: 100px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+h1,h2{
+font-family: 'Banco Normal';
+color: orangered;
+}
+
+h3 {
+color: #E62E00;
+}
+
+h4{
+color: #E65C00;
+}
+
+p{
+font-family: Arial, sans-serif;
+color: #999;
+}
+
+a{
+color: chocolate;
+}
+
+a:hover{
+color: white;
+text-decoration: none;
+}
+
+/*headbar settings*/
+.navbar {
+  min-height: 80px;
+  border-width: 1px;
+  border-color: orangered;
+  border-bottom-style: dotted;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+}
+
+.navbar-brand{
+font-size:50px;
+font-family: 'Banco Normal', Arial, sans-serif;
+border: 30px white;
+padding: 30px;
+}
+/********************************TOP BAR****************************/
+.navbar-inverse{
+background-color: black;
+}
+/*header nav*/
+.navbar-inverse .navbar-brand {
+color: #E65C00;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus{
+color: antiquewhite;
+}
+
+/*nav links*/
+.navbar-inverse .navbar-nav>li>a{
+color: #E62E00;
+font-size: 1.5em;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus{
+color: #CC6600;}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus{
+color: green;
+}
+
+/********************************PANELS N STUFF****************************/
+.panel-default>.panel-heading{
+background-color: #000;
+}
+.panel{
+background-color: #000;
+}
+
+.panel-default {
+border-top:none;
+border-right:none;
+border-left:;
+border-bottom:none;
+border-radius: 0;
+}
+
+.panel-group .panel {
+margin-bottom: 0;
+border-radius: 0;
+border: 0;
+}
+
+.thumbnail {
+display: block;
+padding: 4px;
+margin-bottom: 20px;
+line-height: 1.42857143;
+background-color: #fff;
+border-top:0;
+border-right:0;
+border-bottom:0;
+border-radius: 0px;
+-webkit-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+}
+
+.well {
+min-height: 20px;
+padding: 19px;
+margin-bottom: 20px;
+background-color: #000;
+border: 1px solid #e3e3e3;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+
+
+/********************************IMG SETTINGS****************************/
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/********************************BUTT(on)S****************************/
+.btn-default {
+color: #CC2900;
+background-color: #000;
+border-color: #FF3300;
+}
+
+.btn-default:hover {
+background-color: #CC6600;
+border-color: #FF3300;
+color: #CC2900;
+}
+
+.btn-primary {
+color: #CC2900 !important;
+background-color: #000 !important;
+border-color: #FF3300 !important;
+}
+
+.btn-primary:hover {
+background-color: #CC6600 ;
+color: #CC2900;
+}
+
+/********************************??? what ****************************/
+.thumbnail{
+background-color: black;
+}
+
+/********************************pg breaks and heads****************************/
+.page-header {
+padding-bottom: 9px;
+margin: 40px 0 20px;
+border-bottom: 1px solid;
+}
+
+hr {
+margin-top: 20px;
+margin-bottom: 20px;
+border: 0;
+border-top: 1px solid #444;
+}
+
+/***********8*why is it called a breadcrumb and other misc**********************/
+.breadcrumb {
+padding: 8px 15px;
+margin-bottom: 20px;
+list-style: none;
+background-color: #111;
+border-radius: 4px;}
+
+.pagination>li>a, .pagination>li>span {
+position: relative;
+float: left;
+padding: 6px 12px;
+margin-left: -1px;
+line-height: 1.42857143;
+color: #555;
+text-decoration: none;
+background-color: #000;
+border: 1px solid #ddd;
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+z-index: 2;
+color: orangered;
+cursor: default;
+background-color: #000;
+border-color: #fff;
+}
+
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {
+color: orangered;
+background-color: #eee;
+border-color: #fff;
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+    height: 50%;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+/* Footer Styles */
+
+footer {
+    margin: 50px 0;
+	opacity: 0.6;
+	font-size: 10px;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+	
+	.navbar-brand{
+		font-size:40px;}
+	}
+	
+	.navbar-inverse .navbar-nav>li>a{
+		font-size: 1em;
+	}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+	
+	.navbar-brand{
+	font-size:35px;
+	padding: 15px;
+	}
+	
+	.row{
+	margin: 0 auto;}
+}
+
+@media(max-width:480px){
+	.navbar-brand{
+	padding: 15px;
+	font-size:
+	}
+	
