@@ -103,6 +103,10 @@ img {
 	
 }
 
+img:hover {
+	opacity:.9;
+}
+
 .thumbnail {
 	width: 75px;
 	display: inline-block;
