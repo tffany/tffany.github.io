@@ -361,7 +361,7 @@ blockquote {
 }
 .btn-default {
 	color: #C00020;
-	background:transparent;
+	background: #fff;
 	border: 1px solid #cccccc;
 	
 	font-family: 'Montserrat', sans-serif;
@@ -522,10 +522,15 @@ textarea {
 	opacity: 1;
 }
 
-.modal-footer p{
-	font-size: 10px;
+.modal-footer h5 {
 	text-align: left;
+}
 
+.modal-footer p{
+	text-align: left;
+	font-size: 10px;
+	font-weight: 800;
+	color: #ccc;
 }
 
 /* Large devices (Large desktops 1200px and up) */
@@ -747,6 +752,7 @@ textarea {
 }
 .isotope-item .btn-default {
 	color: #999999;
+	background: transparent;
 }
 .isotope-item .btn-default:hover {
 	color: #ffffff;
