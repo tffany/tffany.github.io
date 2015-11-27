@@ -537,8 +537,9 @@ textarea {
 .modal-footer p{
 	text-align: left;
 	font-size: 10px;
-	font-weight: 800;
+	font-weight: 600;
 	color: #ccc;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* Large devices (Large desktops 1200px and up) */
