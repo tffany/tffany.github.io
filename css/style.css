@@ -114,6 +114,16 @@ img {
 	padding: 5px;
 }
 
+.styline{
+	display:inline-block;
+}
+
+.gifborder{
+	border-right: 3px #222 solid;
+	margin: 0 auto;
+	padding: 5px;
+}
+
 .list-unstyled li {
 	padding: 5px 0;
 }
@@ -147,7 +157,7 @@ blockquote {
 .header {
 	color: #ffffff;
 	padding: 7px 0;
-	background-color: rgba(80, 158, 174, 0.5);
+	background-color: rgba(80, 158, 174, 0.7);
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
@@ -266,7 +276,7 @@ blockquote {
 	background: url("../images/bg1.png") 50% 0px no-repeat;
 }
 .bg-image-2 {
-	background: url("../images/bg-image-2.jpg") 50% 0px no-repeat;
+	background: url("../images/me.png") 50% 0px no-repeat;
 }
 
 /* Misc
