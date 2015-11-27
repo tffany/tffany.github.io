@@ -114,6 +114,10 @@ img {
 	padding: 5px;
 }
 
+.cleanborder:hover{
+	border-color:#7ED8E1;
+}
+
 .styline{
 	display:inline-block;
 }
@@ -520,6 +524,10 @@ textarea {
 	text-shadow: none;
 	filter: alpha(opacity=100);
 	opacity: 1;
+}
+
+.modal-footer{
+	background: rgba(0, 0, 0, 0.5);
 }
 
 .modal-footer h5 {
